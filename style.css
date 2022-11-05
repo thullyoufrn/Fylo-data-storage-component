@@ -38,7 +38,7 @@ section {
 
 .top-box {
     background-color: var(--dark-blue);
-    border-radius: 8px 100px 8px 8px;
+    border-radius: 10px 100px 10px 10px;
     box-shadow: 0px 50px 50px -40px rgba(0, 0, 0, 30%);
     padding: 35px;
 }
@@ -64,7 +64,57 @@ section {
 
 .bottom-box {
     background-color: var(--dark-blue);
-    margin-top: 15px;
+    border-radius: 10px;
+    padding: 30px 30px 40px 30px;
+    margin-top: 16px;
+    color: var(--pale-blue);
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottom-box p:first-of-type {
+    margin-bottom: 15px;
+}
+
+.bottom-box p:first-of-type span {
+    font-weight: 700;
+}
+
+#bar {
+    height: 20px;
+    width: 100%;
+    background-color: hsl(228, 57%, 19%);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+#bar-gradient {
+    width: 75%;
+    height: 100%;
+    background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-finish));
+    border-radius: 10px;   
+    padding: 2px;
+    display: flex;
+    justify-content: right;
+}
+
+#ball {
+    width: 10px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#min-and-max {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 700;
+    font-size: 12px;
 }
 
 .text-box {
