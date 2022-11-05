@@ -36,9 +36,6 @@ section {
     justify-content: space-evenly;
 }
 
-.container > * {
-}
-
 .top-box {
     background-color: var(--dark-blue);
     border-radius: 8px 100px 8px 8px;
