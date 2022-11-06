@@ -19,7 +19,6 @@ body {
     font-family: 'Raleway', sans-serif;
     background-color: var(--very-dark-blue);
     background-image: url("./images/bg-mobile.png");
-    background-repeat: no-repeat;
 }
 
 section {
@@ -62,6 +61,10 @@ section {
     align-items: center;
 }
 
+#big-box {
+    align-items: center;
+}
+
 .bottom-box {
     background-color: var(--dark-blue);
     border-radius: 10px;
@@ -72,13 +75,10 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0px 50px 50px -40px rgba(0, 0, 0, 30%);
 }
 
-.bottom-box p:first-of-type {
-    margin-bottom: 15px;
-}
-
-.bottom-box p:first-of-type span {
+span {
     font-weight: 700;
 }
 
@@ -86,6 +86,7 @@ section {
     height: 20px;
     width: 100%;
     background-color: hsl(228, 57%, 19%);
+    margin-top: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 3px;
@@ -115,12 +116,11 @@ section {
     width: 100%;
     font-weight: 700;
     font-size: 12px;
+    margin-bottom: 15px;
 }
 
 .text-box {
     background-color: white;
-    padding: 12px 20px;
-    width: 55%;
     align-self: center;
     border-radius: 10px;
     margin-top: -35px; 
@@ -128,6 +128,8 @@ section {
     align-items: center;
     justify-content: center;
     font-weight: 700;
+    padding: 12px 20px;
+    max-width: 50%;
 }
 
 .text-box h1 {
@@ -142,6 +144,40 @@ section {
     text-transform: uppercase;
 }
 
+@media screen and (min-width: 1100px) {
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+    body {
+        background-image: url(./images/bg-desktop.png);
+        background-position: top 100%    left 0px;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        flex-direction: row;
+        max-width: 60%;
+        align-items: flex-end;
+    }
+
+    .top-box {
+        flex-grow: 1;
+        margin-right: 30px;
+    }
+
+    .bottom-box {
+        flex-grow: 3;
+        margin: 0;
+        padding: 35px;
+    }
+
+    .bottom-box p:first-of-type {
+        align-self: flex-start;
+    }
+    
+    .text-box {
+        flex
+    }
+
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
