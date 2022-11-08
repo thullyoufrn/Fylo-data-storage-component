@@ -68,7 +68,7 @@ section {
 .bottom-box {
     background-color: var(--dark-blue);
     border-radius: 10px;
-    padding: 30px 30px 35px 30px;
+    padding: 30px 30px 50px 30px;
     margin-top: 16px;
     color: var(--pale-blue);
     font-size: 14px;
@@ -106,20 +106,18 @@ span {
     width: 10px;
     height: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 100%;
 }
 
 #min-and-max {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     width: 100%;
     font-weight: 700;
     font-size: 12px;
-    margin-bottom: 15px;
 }
 
-.text-box {
+/* .text-box {
     background-color: white;
     align-self: center;
     border-radius: 10px;
@@ -177,7 +175,7 @@ span {
         flex
     }
 
-}
+} */
 
 /* .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); } */
